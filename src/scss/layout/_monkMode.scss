@@ -1,0 +1,31 @@
+.monkMode{
+    min-height: 300px;
+    width: 55%;
+    margin: auto;
+
+    display: flex;
+    flex-direction:column;
+
+    background-color: aliceblue;
+    padding: 30px;
+    border-radius: 10px;
+    
+    .header{
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        gap: 30px;
+       
+    }
+    .dias{
+        
+        display: flex;
+        gap: 30px;
+    }
+
+    .ajustes{
+        display: flex;
+        gap: 30px;
+    }
+}

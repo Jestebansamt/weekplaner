@@ -1,0 +1,464 @@
+.week {
+    width: 90%;
+    margin: auto;
+
+
+
+    .bodyAjustes {
+        &>div {
+            position: relative;
+        }
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        button {
+            border-radius: 10px;
+            border: none;
+            padding: 0px 10px;
+            font-size: 19px;
+            margin-left: 5px;
+            height: 50px;
+        }
+
+        button:hover {
+            background-color: rgb(111, 124, 135);
+            color: white;
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: white;
+            color: black;
+        }
+
+        .ocultarGrupos {
+            position: absolute;
+            width: 0px;
+            height: 0px;
+
+            p {
+                font-size: 0px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            img{
+                width: 0px;
+                height: 0px;
+            }
+        }
+
+        .mostrarGrupos {
+            
+            p{
+                font-size: 20px;
+            }
+            padding: 30px 10px 10px 10px;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            left: 205px;
+            top: 60px;
+            background-color: #527581;;
+           
+            width: 200px;
+            height: auto;
+            color: white;
+            border-radius: 5px;
+
+            .agregarGrupos {
+                font-weight: 300;
+                color: rgb(255, 255, 255);
+                padding: 10px 5px;
+                margin-top: -10px;
+                border-radius: 5px;
+            }
+
+            .agregarGrupos:hover {
+                background-color: rgb(111, 124, 135);
+                cursor: pointer;
+            }
+            
+            .imagenesGrupo{
+                padding: 0px;
+                margin: 0px;
+                width: 0px;
+                height: 0px;
+            }
+            .infoGrupo{
+                height: 20px;
+            }
+            .infoGrupo p{
+                padding: 0px;
+                font-size: 18px;
+            }
+           
+            .infoGrupo  img{
+                width: 0px;
+            }
+            .infoGrupo:hover .imagenesGrupo{
+              
+                position: relative;
+                top: -27px;
+                left: 124px;
+                width: 71px;
+                height: 20px;
+                background-color: rgba($color: rgb(53, 68, 90), $alpha: .95);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px; 
+                padding: 3px;
+            }
+            .infoGrupo:hover img{
+                padding: 3px;
+                border-radius: 3px;
+                width: 20px;
+                filter: invert(100%);  
+            }  
+            .infoGrupo:hover img:hover{
+                background-color: rgba($color: rgb(255, 255, 255), $alpha: .95);
+            }
+           
+            
+            .linea {
+                border-bottom: 1px solid;
+            }
+
+            p {
+                padding: 0px;
+                margin: 3px;
+            }
+        }
+    }
+
+    .bodyAjustes>div {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .dias {
+        overflow: auto;
+
+
+        &>div {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 15px;
+
+
+            width: 2555px; //350+15 * 7
+
+            .dia {
+
+                width: 350px;
+                min-height: 400px;
+                padding: 30px 12px;
+                border-radius: 3px;
+                margin: 30px 0px;
+
+                .headerDia {
+                    display: flex;
+                    justify-content: space-between;
+                    padding-left: 5px;
+                }
+
+                .headerDia>div {
+                    display: flex;
+                    gap: 10px;
+                }
+
+
+            }
+
+            .bodyDia,
+            .headerDia {
+                p {
+                    padding-top: 0px;
+                    padding-bottom: 10px;
+                    margin: 0px;
+                }
+            }
+
+            .bodyDia {
+
+
+                .agregarTareas {
+
+                    font-weight: 300;
+                    color: rgb(255, 255, 255);
+                    padding: 10px 5px;
+                    border-radius: 5px;
+                    margin: 10px 5px;
+                }
+
+                .agregarTareas:hover {
+                    background-color: rgb(111, 124, 135);
+                    cursor: pointer;
+                }
+
+                .agregarTareas p {
+                    padding: 0px;
+                }
+
+            }
+
+            .formularioTarea {
+                position: relative;
+                margin-bottom: 20px;
+
+
+                form,
+                .select,
+                .subject {
+                    background-color: rgb(225, 233, 240);
+                }
+
+
+                .select p {
+                    color: rgb(91, 91, 91);
+                    font-size: 17px;
+                    padding: 10px;
+                }
+
+                .select p:hover {
+                    background-color: rgb(146, 167, 185);
+                    color: white;
+                    cursor: pointer;
+                }
+
+                .subjectOculto {
+                    height: 0px;
+                    width: 0px;
+
+                }
+
+                .subjectOculto p {
+                    height: 0px;
+                    font-size: 0px;
+                    padding: 0px;
+                }
+
+                .subject {
+                    max-height: 250px;
+                    position: absolute;
+                    width: 100%;
+                    overflow-y: auto;
+                    z-index: 1;
+
+                }
+
+                .subject p {
+                    height: auto;
+                    font-size: 17px;
+                }
+
+                .subject p:hover {
+                    background-color: rgb(146, 167, 185);
+                    color: white;
+                    cursor: pointer;
+                }
+
+
+                .gurpos {
+                    max-height: 250px;
+                    width: 100%;
+                    overflow-y: auto;
+                }
+
+                .grupos p {
+                    font-size: 17px;
+                    padding-left: 15px;
+                }
+
+                .grupos p:hover {
+                    background-color: rgb(146, 167, 185);
+                    color: white;
+                    cursor: pointer;
+                }
+
+                .grupos p::before {
+                    content: ': : ';
+                }
+
+                .gruposOcultos {
+                    height: 0px;
+                    width: 0px;
+                }
+
+                .gruposOcultos p {
+                    font-size: 0px;
+                    padding: 0px;
+                }
+
+
+                form input {
+                    border: 0px;
+                    background-color: transparent;
+                    padding: 10px;
+
+                    font-size: 17px;
+                }
+
+                form input:focus {
+                    outline: none;
+                    border: 0px solid white;
+                }
+            }
+
+
+            .mostrarTarea {
+                display: flex;
+                flex-direction: column;
+
+                .headerTarea {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    background-color: #527581;
+
+                    padding: 15px;
+                    border-radius: 5px;
+                    margin-bottom: 10px;
+
+                    .tarea {
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-start;
+                        flex-direction: column;
+                        width: 100%;
+                        gap: 10px;
+                        z-index: 0;
+
+                        .tareaNombre {
+                            width: 100%;
+                            display: flex;
+                            align-items: flex-start;
+                            justify-content: space-between;
+
+                            .tareaAjustes {
+                                display: flex;
+                                position: absolute;
+                                left: 215px;
+                                top: 7px;
+
+                            }
+
+                            .tareaAjustes img {
+                                width: 0px;
+                            }
+                        }
+
+                        .tareaNombre>p {
+                            font-size: 18px;
+                        }
+
+                        .tareaGrupo>p {
+                            font-size: 16px;
+                            font-weight: 300;
+                        }
+                    }
+
+                    .tarea p {
+                        padding: 0px;
+
+                    }
+                }
+
+                .headerTarea:hover {
+                    .tarea .tareaNombre .tareaAjustes img {
+                        width: 20px;
+                        filter: invert(100%);
+                        z-index: 1;
+                        padding: 5px 7px 5px 7px;
+                    }
+
+                    .tarea .tareaNombre .tareaAjustes {
+                        background-color: rgba($color: rgb(53, 68, 90), $alpha: .95);
+                        border-radius: 5px;
+
+                    }
+
+                    .tarea .tareaNombre .tareaAjustes img:hover {
+                        background-color: rgba($color: rgb(255, 255, 255), $alpha: .95);
+                        border-radius: 5px;
+                        cursor: pointer;
+
+                    }
+
+
+
+
+                }
+
+
+
+            }
+
+
+
+
+        }
+
+    }
+
+    .tabla {
+        overflow: hidden;
+
+        &.dias>div {
+            flex-wrap: wrap;
+            width: auto;
+
+            .dia {
+                flex: 1 1 350px;
+                max-width: 350px;
+            }
+        }
+    }
+
+
+
+}
+
+.lunes {
+    color: white;
+    background-color: #3A98B9;
+}
+
+.martes {
+    color: white;
+    background-color: #4b9dbb;
+}
+
+.miercoles {
+    color: white;
+    background-color: #4b9dbb;
+}
+
+.jueves {
+    color: white;
+    background-color: #62a3bb;
+}
+
+.viernes {
+    color: white;
+    background-color: #65a1b7;
+}
+
+.sabado {
+    color: white;
+    background-color: #457181;
+}
+
+.domingo {
+    color: white;
+    background-color: #243b44;
+}

@@ -1,0 +1,526 @@
+<!-- https://www.figma.com/community/file/1194747779911322582 -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week Planer</title>
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+
+<body>
+    <header>
+
+        <div class="imagen"></div>
+
+        <div class="header">
+            <h1>Semana: <span class="bold">Diciembre 03</span></h1>
+            <!-- Poner primer dia de la semana segun se tenga configurado -->
+        </div>
+    </header>
+
+    <section class="week">
+        <div>
+            <div class="ajustes">
+                <div class="headerAjustes">
+                    <!-- Icono  -->
+                    <h2>Week Planer</h2>
+                </div>
+
+                <div class="bodyAjustes">
+                    <div>
+                        <p id="scroll" class="seleccionado">Scroll</p>
+                        <p id="tabla">Tabla</p>
+                    </div>
+
+                    <div>
+
+                        <!-- Icono -->
+                        <p>...</p>
+                        <!-- 
+                            <p>Inicio de semana</p>
+                        
+                            Lunes
+                            Martes
+                            Miercoles
+                            Jueves
+                            Viernes 
+                            Sabado
+                            Domingo
+                        -->
+
+                        <p>Filter</p>
+                        <!-- 
+                        check list donde se muestr por defecto todo
+                        Dias de la semana que faltan
+                        Dias de la semana libres
+                        Opcion que despliegue un check list para escoger dias
+                        Personalizado
+
+                        Opcion a parte para visualizar -checkList
+                        Mostrar Subject
+                        Mostrar Grupo
+                    -->
+
+                        <p>Sort</p>
+                        <!--
+                        Prioridad
+                        Dia de la semana
+                        Subject
+                        Grupo
+                    -->
+
+                        <!-- Icono -->
+                        <p>Brujula</p>
+                        <!-- 
+                        Espacio para buscar una tarea en especifico
+                     -->
+
+                        <button id="nuevoGrupo">Nuevo Grupo</button>
+                        <div class="ocultarGrupos" id="mostrarGrupos">
+                        </div>
+
+                        <!--
+                        Subject 
+                        ::Group
+                        ::Group
+                        ::Group
+                        ::Group
+                        Subject
+                        ::Group
+
+                        Universidad
+                        ::Calculo
+                        ::Programacion
+                        ::Algebra
+                        Casa
+                        ::Oficio
+                        ::Compras
+                    -->
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="dias" id="dias">
+                <div>
+                    <div class="lunes dia" id="dia">
+                        <div class="headerDia">
+                            <div>
+                                <p>Lunes</p>
+                                <p id="contadorDia">10</p>
+                            </div>
+                            <div>
+                                <p>...</p>
+                                <!-- 
+                                Desplegar lista de colores
+                                opcion para poner el color que se desee
+
+                                Opcion a parte para visualizar -checkList
+                                Mostrar Subject
+                                Mostrar Grupo
+                             -->
+                            </div>
+                        </div>
+
+                        <div class="bodyDia">
+                            <div class="agregarTareas" id="agregarTareas">
+                                <p>+ Nuevo</p>
+                            </div>
+                            <div class="formularioTarea" id="formularioTarea"></div>
+                            <div class="mostrarTarea" id="mostrarTarea"></div>
+
+                            <!-- <div class="mostrarTarea">
+
+                                </div> -->
+                            <!-- 
+                                tareas
+                                p.bold nombre de la tarea - lapiz para editar el texto y el grupo
+                                Subject::Grupo
+
+                             -->
+
+
+                        </div>
+
+                    </div>
+                    <div class="martes dia" id="dia">
+                        <div class="headerDia">
+                            <div>
+                                <p>Martes</p>
+                                <p id="contadorDia">10</p>
+                            </div>
+                            <div>
+                                <p>...</p>
+                                <!-- 
+                                Desplegar lista de colores
+                                opcion para poner el color que se desee
+
+                                Opcion a parte para visualizar -checkList
+                                Mostrar Subject
+                                Mostrar Grupo
+                             -->
+                            </div>
+                        </div>
+
+                        <div class="bodyDia">
+                            <div class="agregarTareas" id="agregarTareas">
+                                <p>+ Nuevo</p>
+                                <!-- 
+                                Titulo
+                                Add Subject Desplegable
+                                    Add Group Desplegable dentro de cada subject
+                             -->
+                            </div>
+                            <div class="formularioTarea" id="formularioTarea">
+
+                            </div>
+                            <div class="mostrarTarea" id="mostrarTarea">
+
+                            </div>
+
+
+                            <!-- <div class="mostrarTarea">
+
+                                </div> -->
+                            <!-- 
+                                tareas
+                                p.bold nombre de la tarea - lapiz para editar el texto y el grupo
+                                Subject::Grupo
+
+                             -->
+
+
+                        </div>
+
+                    </div>
+                    <div class="miercoles dia" id="dia">
+                        <div class="headerDia">
+                            <div>
+                                <p>Miercoles</p>
+                                <p id="contadorDia">10</p>
+                            </div>
+                            <div>
+                                <p>...</p>
+                                <!-- 
+                                Desplegar lista de colores
+                                opcion para poner el color que se desee
+
+                                Opcion a parte para visualizar -checkList
+                                Mostrar Subject
+                                Mostrar Grupo
+                             -->
+                            </div>
+                        </div>
+
+                        <div class="bodyDia">
+                            <div class="agregarTareas" id="agregarTareas">
+                                <p>+ Nuevo</p>
+                                <!-- 
+                                Titulo
+                                Add Subject Desplegable
+                                    Add Group Desplegable dentro de cada subject
+                             -->
+                            </div>
+                            <div class="formularioTarea" id="formularioTarea">
+                            </div>
+                            <div class="mostrarTarea" id="mostrarTarea">
+
+                            </div>
+
+                            <!-- <div class="mostrarTarea">
+
+                                </div> -->
+                            <!-- 
+                                tareas
+                                p.bold nombre de la tarea - lapiz para editar el texto y el grupo
+                                Subject::Grupo
+
+                             -->
+
+
+                        </div>
+
+                    </div>
+                    <div class="jueves dia" id="dia">
+                        <div class="headerDia">
+                            <div>
+                                <p>Jueves</p>
+                                <p id="contadorDia">10</p>
+                            </div>
+                            <div>
+                                <p>...</p>
+                                <!-- 
+                                Desplegar lista de colores
+                                opcion para poner el color que se desee
+
+                                Opcion a parte para visualizar -checkList
+                                Mostrar Subject
+                                Mostrar Grupo
+                             -->
+                            </div>
+                        </div>
+
+                        <div class="bodyDia">
+                            <div class="agregarTareas" id="agregarTareas">
+                                <p>+ Nuevo</p>
+                                <!-- 
+                                Titulo
+                                Add Subject Desplegable
+                                    Add Group Desplegable dentro de cada subject
+                             -->
+                            </div>
+                            <div class="formularioTarea" id="formularioTarea">
+                            </div>
+                            <div class="mostrarTarea" id="mostrarTarea">
+
+                            </div>
+
+                            <!-- <div class="mostrarTarea">
+
+                                </div> -->
+                            <!-- 
+                                tareas
+                                p.bold nombre de la tarea - lapiz para editar el texto y el grupo
+                                Subject::Grupo
+
+                             -->
+
+
+                        </div>
+
+                    </div>
+                    <div class="viernes dia" id="dia">
+                        <div class="headerDia">
+                            <div>
+                                <p>Viernes</p>
+                                <p id="contadorDia">10</p>
+                            </div>
+                            <div>
+                                <p>...</p>
+                                <!-- 
+                                Desplegar lista de colores
+                                opcion para poner el color que se desee
+
+                                Opcion a parte para visualizar -checkList
+                                Mostrar Subject
+                                Mostrar Grupo
+                             -->
+                            </div>
+                        </div>
+
+                        <div class="bodyDia">
+                            <div class="agregarTareas" id="agregarTareas">
+                                <p>+ Nuevo</p>
+                                <!-- 
+                                Titulo
+                                Add Subject Desplegable
+                                    Add Group Desplegable dentro de cada subject
+                             -->
+                            </div>
+                            <div class="formularioTarea" id="formularioTarea">
+                            </div>
+                            <div class="mostrarTarea" id="mostrarTarea">
+                                <!-- <div class="mostrarTarea">
+
+                                </div> -->
+                                <!-- 
+                                tareas
+                                p.bold nombre de la tarea - lapiz para editar el texto y el grupo
+                                Subject::Grupo
+
+                             -->
+
+
+
+                            </div>
+
+
+
+
+                        </div>
+
+                    </div>
+                    <div class="sabado dia" id="dia">
+                        <div class="headerDia">
+                            <div>
+                                <p>Sabado</p>
+                                <p id="contadorDia">10</p>
+                            </div>
+                            <div>
+                                <p>...</p>
+                                <!-- 
+                                Desplegar lista de colores
+                                opcion para poner el color que se desee
+
+                                Opcion a parte para visualizar -checkList
+                                Mostrar Subject
+                                Mostrar Grupo
+                             -->
+                            </div>
+                        </div>
+
+                        <div class="bodyDia">
+                            <div class="agregarTareas" id="agregarTareas">
+                                <p>+ Nuevo</p>
+                                <!-- 
+                                Titulo
+                                Add Subject Desplegable
+                                    Add Group Desplegable dentro de cada subject
+                             -->
+                            </div>
+                            <div class="formularioTarea" id="formularioTarea">
+                            </div>
+                            <div class="mostrarTarea" id="mostrarTarea">
+
+                            </div>
+
+                            <!-- <div class="mostrarTarea">
+
+                                </div> -->
+                            <!-- 
+                                tareas
+                                p.bold nombre de la tarea - lapiz para editar el texto y el grupo
+                                Subject::Grupo
+
+                             -->
+
+
+                        </div>
+
+                    </div>
+                    <div class="domingo dia" id="dia">
+                        <div class="headerDia">
+                            <div>
+                                <p>Domingo</p>
+                                <p id="contadorDia">10</p>
+                            </div>
+                            <div>
+                                <p>...</p>
+                                <!-- 
+                                Desplegar lista de colores
+                                opcion para poner el color que se desee
+
+                                Opcion a parte para visualizar -checkList
+                                Mostrar Subject
+                                Mostrar Grupo
+                             -->
+                            </div>
+                        </div>
+
+
+                        <div class="bodyDia">
+                            <div class="agregarTareas" id="agregarTareas">
+                                <p>+ Nuevo</p>
+                                <!-- 
+                                Titulo
+                                Add Subject Desplegable
+                                    Add Group Desplegable dentro de cada subject
+                             -->
+                            </div>
+                            <div class="formularioTarea" id="formularioTarea">
+                            </div>
+                            <div class="mostrarTarea" id="mostrarTarea">
+
+                            </div>
+
+                            <!-- <div class="mostrarTarea">
+
+                                </div> -->
+                            <!-- 
+                                tareas
+                                p.bold nombre de la tarea - lapiz para editar el texto y el grupo
+                                Subject::Grupo
+
+                             -->
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contenedor">
+        <section class="lista">
+            <div class="ajustes">
+                <div class="headerAjustes">
+                    <h2>Lista</h2>
+                </div>
+
+                <div class="bodyAjustes">
+                    <p>Filter</p>
+                    <!-- 
+                        checklist donde se puedan escoger varias y se acumulen segun los grupos
+                        Ordenar por prioridad
+                        Ordenar por dia
+                        Ordenar por Dias que ya pasaron (poner primero)
+                        Ordernar por grupos
+                    -->
+                </div>
+            </div>
+
+            <div class="elementosLista">
+                <div class="elementosLista">
+                    <!-- 
+                        <input type="checkbox" id="checkboxLista" name="checkboxLista">
+                        <label for="checkboxLista">Nombre de la tarea</label>
+                     -->
+                </div>
+            </div>
+        </section>
+
+        <section class="monkMode">
+            <div class="header">
+                <div class="titulo">
+                    <h2>Monk Mode</h2>
+                </div>
+
+                <div class="dias">
+                    <p>Lu</p>
+                    <p>Ma</p>
+                    <p>Mi</p>
+                    <p>Ju</p>
+                    <p>Vi</p>
+                    <p>Sa</p>
+                    <p>Do</p>
+                </div>
+            </div>
+
+            <div class="ajustes">
+                <!-- SOLO SE PUEDE ACTIVAR A PRINCIPIO DE SEMANA -->
+                <p>+ Nuevo</p>
+                <!-- 
+                    Titulo
+                -->
+                <p>...</p>
+                <!-- Color De todo  -->
+            </div>
+
+            <div class="body">
+                <div class="elementoMonkMode">
+                    <!-- p.bold 
+                        7 check list uno por dia, error azul, logro verde
+                    -->
+                </div>
+            </div>
+
+
+        </section>
+    </section>
+
+
+    <script src="build/js/bundle.min.js"></script>
+
+
+</body>
+
+</html>
